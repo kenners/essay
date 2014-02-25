@@ -1,0 +1,47 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[12pt,a4paper]{article}
+\usepackage[margin=1.5in]{geometry}
+\usepackage[parfill]{parskip}
+\usepackage[superscript,biblabel]{cite}
+\usepackage[UKenglish]{babel}
+\usepackage[UKenglish]{isodate}
+\usepackage{graphicx}
+
+% Pretty table stuff
+\usepackage{tabu}
+\usepackage{longtable}
+\usepackage{booktabs}
+
+\usepackage[unicode]{hyperref}
+\hypersetup{pdfauthor={Kenrick Turner}, pdftitle={Essay template}, pdfsubject={Template},pdfkeywords={essay, template}}
+
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[Mapping=tex-text]{Helvetica Neue}
+\setmonofont[Scale=MatchLowercase]{Source Code Pro}
+\usepackage{microtype}
+
+\title{Essay template}
+\author{Author or subtitle}
+\date{Student: ID \\ Word Count:  \\ Submission Deadline: }
+
+\linespread{1.3}
+
+\begin{document}
+
+\maketitle
+
+% Close loops: claim, justify, support, implications
+
+\section*{Introduction}
+
+Body text
+
+\pagebreak
+
+\bibliographystyle{vancouver}
+\bibliography{essay}
+
+\end{document}
