@@ -42,7 +42,45 @@
 
 \section{Heading}
 
-Body text
+Body text. A non-standard symbol: {\sym ✓}. See Figure~\ref{fig:foo}.
+
+\begin{enumerate}
+    \item Foo
+\end{enumerate}
+
+\begin{itemize}
+    \item Foo
+\end{itemize}
+
+\begin{figure}[!hb]
+    \centering
+    \includegraphics[scale=.7]{foo.pdf}
+    \caption{A diagram of foo}
+    \label{fig:foo}
+\end{figure}
+
+\begin{table}[!hb]
+    %\scriptsize
+    \begin{tabu} to \linewidth{X[2,l] X[c] X[r]}
+        \toprule
+        \rowfont\bfseries One & Two & Three \\
+        \midrule
+        Foo & Bar & Spam \\
+        \bottomrule
+    \end{tabu}
+    %\normalsize
+    \caption{\label{tbl:foo}A table}
+\end{table}
+
+\begin{longtabu} to \linewidth{X[2,l] X[c] X[r]}
+    \toprule
+    \rowfont\bfseries One & Two & Three \\
+    \midrule
+    \endhead
+    Foo & Bar & Spam \\
+    \bottomrule
+    \caption{\label{tbl:foo}A table}
+\end{longtabu}
 
 \pagebreak
 
